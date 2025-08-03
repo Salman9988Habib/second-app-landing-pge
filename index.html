@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Image Steganography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="radio" name="tabs" id="encode-tab" checked />
+  <input type="radio" name="tabs" id="decode-tab" />
+  <input type="radio" name="tabs" id="about-tab" />
+  <header>
+    <h1>Advanced Image Steganography</h1>
+    <p class="tag">Conceal. Encrypt. Reveal.</p>
+    <div class="icons">
+      <img src="https://img.icons8.com/ios-filled/24/moon-symbol.png" alt="Dark Mode" title="Toggle Dark Mode" id="darkModeToggle" />
+      <a href="https://github.com/Ayan123ayan/App-Landing-Page-2.git" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/github.png" alt="GitHub" title="View on GitHub" />
+      </a>
+    </div>
+  </header>
+
+  <div class="box">
+    <div class="tabs">
+      <label for="encode-tab" class="tab-btn t-encode">Encode</label>
+      <label for="decode-tab" class="tab-btn t-decode">Decode</label>
+      <label for="about-tab" class="tab-btn t-about">About</label>
+    </div>
+
+    <div class="tab-body encode">
+      <section>
+        <h2>Select Image</h2>
+        <p>Upload an image to hide your message inside.</p>
+        <div class="upload">Click or drag an image file here (PNG, JPG, GIF, max 500KB)</div>
+      </section>
+
+      <section>
+        <h2>Secret Message</h2>
+        <textarea placeholder="Type your secret message here..."></textarea>
+        <div class="opts">
+          <div>
+            <input type="checkbox" id="encrypt" />
+            <label for="encrypt">Enable Encryption</label>
+          </div>
+          <span class="count">0 characters</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-blue">Encode Message</button>
+          <button class="btn btn-red">Reset</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-body decode">
+      <section>
+        <h2>Decode Message</h2>
+        <p>Upload an image that contains a hidden message.</p>
+        <div class="upload">Click or drag an image file here (PNG, JPG, GIF)</div>
+      </section>
+    </div>
+
+    <div class="tab-body about">
+      <section>
+        <h2>About This Tool</h2>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
